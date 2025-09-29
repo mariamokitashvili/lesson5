@@ -1,5 +1,19 @@
 @import url("//cdn.web-fonts.ge/fonts/bpg-irubaqidze/css/bpg-irubaqidze.min.css");
 
+@font-face {
+  font-family: "font1";
+  src: url("../fonts/bpg-glaho-bold-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-glaho-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-glaho-bold-webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/bpg-glaho-bold-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/bpg-glaho-bold-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-glaho-bold-webfont.svg#bpg_glahobold") format("svg"); /* Legacy iOS */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +22,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "font1";
 }
 
 header {
@@ -45,4 +60,61 @@ header nav ul li.contact a {
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: bold;
+}
+
+h2 {
+  margin-top: 300px;
+}
+
+.services a {
+  padding: 40px;
+  color: #000;
+  text-align: left;
+  font-family: "font1";
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.services-row {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.service {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.service .icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.service-1 .icon,
+.service-3 .icon {
+  background-color: rgba(249, 249, 249, 1);
+}
+
+.service-2 .icon {
+  background-color: #0a22f4;
+}
+
+.service h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.service p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
 }
